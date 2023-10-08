@@ -1,0 +1,14 @@
+C:\Users\Nazar\source\repos\lab3\lab3\bin\Debug\net6.0\lab3.exe
+C:\Users\Nazar\source\repos\lab3\lab3\bin\Debug\net6.0\lab3.deps.json
+C:\Users\Nazar\source\repos\lab3\lab3\bin\Debug\net6.0\lab3.runtimeconfig.json
+C:\Users\Nazar\source\repos\lab3\lab3\bin\Debug\net6.0\lab3.dll
+C:\Users\Nazar\source\repos\lab3\lab3\bin\Debug\net6.0\lab3.pdb
+C:\Users\Nazar\source\repos\lab3\lab3\obj\Debug\net6.0\lab3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nazar\source\repos\lab3\lab3\obj\Debug\net6.0\lab3.AssemblyInfoInputs.cache
+C:\Users\Nazar\source\repos\lab3\lab3\obj\Debug\net6.0\lab3.AssemblyInfo.cs
+C:\Users\Nazar\source\repos\lab3\lab3\obj\Debug\net6.0\lab3.csproj.CoreCompileInputs.cache
+C:\Users\Nazar\source\repos\lab3\lab3\obj\Debug\net6.0\lab3.dll
+C:\Users\Nazar\source\repos\lab3\lab3\obj\Debug\net6.0\refint\lab3.dll
+C:\Users\Nazar\source\repos\lab3\lab3\obj\Debug\net6.0\lab3.pdb
+C:\Users\Nazar\source\repos\lab3\lab3\obj\Debug\net6.0\lab3.genruntimeconfig.cache
+C:\Users\Nazar\source\repos\lab3\lab3\obj\Debug\net6.0\ref\lab3.dll
