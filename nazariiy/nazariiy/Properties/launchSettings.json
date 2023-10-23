@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "nazariiy": {
+      "commandName": "Project",
+      "commandLineArgs": "run -s lab3"
+    }
+  }
+}
