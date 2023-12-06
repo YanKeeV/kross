@@ -1,0 +1,11 @@
+C:\Users\Nazar\source\repos\webLabs\webLabs\obj\Debug\net6.0\webLabs.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nazar\source\repos\webLabs\webLabs\obj\Debug\net6.0\webLabs.AssemblyInfoInputs.cache
+C:\Users\Nazar\source\repos\webLabs\webLabs\obj\Debug\net6.0\webLabs.AssemblyInfo.cs
+C:\Users\Nazar\source\repos\webLabs\webLabs\obj\Debug\net6.0\webLabs.csproj.CoreCompileInputs.cache
+C:\Users\Nazar\source\repos\webLabs\webLabs\bin\Debug\net6.0\webLabs.deps.json
+C:\Users\Nazar\source\repos\webLabs\webLabs\bin\Debug\net6.0\webLabs.dll
+C:\Users\Nazar\source\repos\webLabs\webLabs\bin\Debug\net6.0\webLabs.pdb
+C:\Users\Nazar\source\repos\webLabs\webLabs\obj\Debug\net6.0\webLabs.dll
+C:\Users\Nazar\source\repos\webLabs\webLabs\obj\Debug\net6.0\refint\webLabs.dll
+C:\Users\Nazar\source\repos\webLabs\webLabs\obj\Debug\net6.0\webLabs.pdb
+C:\Users\Nazar\source\repos\webLabs\webLabs\obj\Debug\net6.0\ref\webLabs.dll
