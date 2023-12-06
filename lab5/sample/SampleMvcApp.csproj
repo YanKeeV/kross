@@ -10,4 +10,7 @@
       <HintPath>C:\Users\Nazar\source\repos\webLabs\webLabs\bin\Debug\net6.0\webLabs.dll</HintPath>
     </Reference>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\webLabs\webLabs\webLabs.csproj" />
+  </ItemGroup>
 </Project>
