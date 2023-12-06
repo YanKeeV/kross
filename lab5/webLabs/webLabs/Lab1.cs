@@ -1,8 +1,8 @@
 ﻿namespace webLabs
 {
-    public class Lab1
+    public static class Lab1
     {
-        public void task1(string inputFilePath, string outputFileName)
+        public static void task1(string inputFilePath, string outputFileName)
         {
             int N;
             int[][] table;
