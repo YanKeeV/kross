@@ -1,8 +1,8 @@
 ﻿namespace webLabs
 {
-    public class Lab2
+    public static class Lab2
     {
-        public void task2(string inputFilePath, string outputFileName)
+        public static void task2(string inputFilePath, string outputFileName)
         {
             using (StreamReader reader = new StreamReader(inputFilePath))
             using (StreamWriter writer = new StreamWriter(outputFileName))
