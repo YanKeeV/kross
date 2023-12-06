@@ -1,8 +1,8 @@
 ﻿namespace webLabs
 {
-    public class Lab3
+    public static class Lab3
     {
-        public void task3(string inputFilePath, string outputFileName)
+        public static void task3(string inputFilePath, string outputFileName)
         {
             // Читаємо вхідні дані з файлу INPUT.TXT
             Console.WriteLine("Start");
