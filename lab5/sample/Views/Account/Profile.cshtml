@@ -1,0 +1,89 @@
+﻿@model SampleMvcApp.Models.UserModel
+@{
+    ViewData["Title"] = "Profile information";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewData["Title"]</title>
+    <style>
+.container {
+    margin-top: 50px;
+}
+
+.info-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.info-item {
+    margin-bottom: 15px;
+}
+
+.info-label {
+    font-weight: bold;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            
+<div class="col-md-8">
+    <ul class="info-list">
+        @if (!string.IsNullOrEmpty(Model.emailAddress))
+        {
+            <li class="info-item">
+                <span class="info-label">Email:</span> @Model.emailAddress
+            </li>
+        }
+
+        @if (!string.IsNullOrEmpty(Model.phoneNumber))
+        {
+            <li class="info-item">
+                <span class="info-label">Телефон:</span> @Model.phoneNumber
+            </li>
+        }
+
+        @if (!string.IsNullOrEmpty(Model.name))
+        {
+            <li class="info-item">
+                <span class="info-label">Ім'я':</span> @Model.name
+            </li>
+        }
+
+        @if (!string.IsNullOrEmpty(Model.fullName))
+        {
+            <li class="info-item">
+                <span class="info-label">ФІО:</span> @Model.fullName
+            </li>
+        }
+
+        @if (!string.IsNullOrEmpty(Model.inlineAddress))
+        {
+            <li class="info-item">
+                <span class="info-label">Адресса:</span> @Model.inlineAddress
+            </li>
+        }
+
+        @foreach (var claim in User.Claims)
+        {
+            if (claim.Type.Length > 10) continue;
+            if (claim.Type == "nickname" || claim.Type == "name" || claim.Type == "locale")
+            {
+                <li class="info-item">
+                    <span class="info-label">@claim.Type:</span> @claim.Value
+                </li>
+            }
+        }
+    </ul>
+</div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

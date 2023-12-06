@@ -1,0 +1,78 @@
+﻿<html lang="en">
+<head>
+    <style>
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .task {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .lab {
+            margin-bottom: 5px;
+        }
+
+        .labs {
+            text-decoration: none;
+            color: blue;
+            display: block;
+        }
+
+            .labs:hover {
+                text-decoration: underline;
+            }
+
+        .main {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .info {
+            font-size: 14px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="body_main">
+            @if (User.Identity.IsAuthenticated)
+            {
+                <div class="title">
+                    <span>Лабораторна робота Янківа Назарія</span>
+                </div>
+                <div class="task">
+                    <span>Виберіть лабораторну роботу:</span>
+                </div>
+                <div class="lab">
+                    <a class="labs" href="/Labs/Lab1">
+                    <span>1. Цікава гра для двох гравців</span>
+                    </a>
+                </div>
+                <div class="lab">
+                     <a class="labs" href="/Labs/Lab2">
+                        <span>2. Обчислення трикутника</span>
+                     </a>
+                </div>
+                <div class="lab">
+                    <a class="labs" href="/Labs/Lab3">
+                        <span>3. Знаходження найкоротшого шляху втечі з засекреченої космічної бази</span>
+                    </a>
+                </div>
+            }
+            else
+            {
+                <div class="main">
+                    <span>Робота студента групи ІПЗ-44мс Янківа Назарія</span>
+                </div>
+                <div class="info">
+                    <p>Для відображення лабораторних треба авторизуватися в системі</p>
+                </div>
+            }
+    </div>
+</body>
+</html>

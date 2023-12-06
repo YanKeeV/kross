@@ -1,0 +1,83 @@
+﻿@model SampleMvcApp.Models.UserModel
+<style>
+    .title {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .form-container {
+        margin-bottom: 15px;
+    }
+
+    .form-label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .form-input {
+        width: 100%;
+        padding: 8px;
+        font-size: 16px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+    }
+
+    .form-submit {
+        padding: 10px 20px;
+        font-size: 18px;
+        border-radius: 4px;
+        background-color: #28a745;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+        .form-submit:hover {
+            background-color: #218838;
+        }
+
+</style>
+
+<div class="title">
+    <span>Реєстрація</span>
+</div>
+<form asp-action="Register" method="post">
+    <div class="form-container">
+        <label class="form-label" asp-for="name">Ім'я користувача:</label>
+        <input class="form-input" asp-for="name" />
+        <span  class="form-validation" asp-validation-for="name"></span>
+    </div>
+
+    <div class="form-container">
+        <label class="form-label" asp-for="fullName">ФІО:</label>
+        <input class="form-input" asp-for="fullName" />
+        <span class="form-validation" asp-validation-for="fullName"></span>
+    </div>
+
+    <div class="form-container">
+        <label class="form-label" asp-for="emailAddress">Електронна адреса: </label>
+        <input class="form-input" asp-for="emailAddress" />
+        <span class="form-validation" asp-validation-for="emailAddress"></span>
+    </div>
+    
+    <div class="form-container">
+        <label class="form-label" asp-for="phoneNumber">Номер телефону:</label>
+        <input class="form-input" asp-for="phoneNumber" type="text" />
+        <span class="form-validation" asp-validation-for="phoneNumber"></span>
+    </div>
+    
+    <div class="form-container">
+        <label class="form-label" asp-for="password">Пароль:</label>
+        <input class="form-input" asp-for="password" type="password" />
+        <span class="form-validation" asp-validation-for="password"></span>
+    </div>
+
+    <div class="form-container">
+        <label class="form-label" asp-for="confirmedPassword">Підвердження паролю:</label>
+        <input class="form-input" asp-for="confirmedPassword" type="password" />
+        <span class="form-validation" asp-validation-for="confirmedPassword"></span>
+    </div>
+
+    <button type="submit" class="form-submit">Зареєструватись</button>
+</form>

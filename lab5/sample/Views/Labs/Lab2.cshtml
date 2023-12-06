@@ -1,0 +1,102 @@
+﻿<head>
+    <style>
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .task {
+            margin-bottom: 15px;
+        }
+
+            .task b {
+                font-weight: bold;
+            }
+
+
+        .caption {
+            margin-bottom: 5px;
+        }
+
+        .path {
+            margin-bottom: 15px;
+        }
+
+        .path_filling input[type='text'] {
+            width: 100%;
+            padding: 8px;
+            font-size: 16px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        input[type='submit'] {
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 4px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+            input[type='submit']:hover {
+                background-color: #0056b3;
+            }
+    </style>
+</head>
+<div>
+    <div class="title">
+                Лабораторна робота 2
+            </div>
+    <div class="task">
+                <b>Завдання:</b>
+        <span>
+            Розглянемо прямокутну таблицю
+            розміром n×m. Занумеруємо рядки таблиці
+            числами від 1 до n, а стовпці – числами від 1
+            до m. Будемо таку таблицю послідовно
+            заповнювати числами в такий спосіб.
+            Позначимо через aij число, що стоїть на
+            перетині i-го рядка і j-ого стовпця. Перший
+            рядок таблиці заповнюється заданими
+            числами – a11, a12, …, a1m. Потім заповнюються рядки із номерами від 2 до n.
+            Число aij обчислюється як сума всіх чисел таблиці, що у «трикутнику» над
+            елементом aij. Усі обчислення при цьому виконуються за модулем r.
+            Більш точно, значення aij обчислюється за такою формулою:
+            Наприклад, якщо таблиця складається з трьох рядків і чотирьох стовпців, і
+            перший рядок складається з чисел 2,3,4,5, а r = 40, то для цих вихідних даних
+            таблиця виглядатиме таким чином (взяття по модулю показано тільки там, де
+            воно призводить до зміни числа):
+            Потрібно написати програму, яка за заданим першим рядком таблиці (a11,
+            a12, …, a1m), обчислює останній рядок, як описано вище.
+            Перший рядок вхідного файлу INPUT.TXT містить числа n, m і r (2 ≤ n, m ≤
+            2000, 2 ≤ r ≤ 109) – число рядків та стовпців таблиці відповідно, а також число, за
+            модулем якого треба порахувати відповідь. Наступний рядок містить m цілих
+            чисел – перший рядок таблиці: a11, a12, …, a1m. Усі a1i неотрицательны і
+            перевищують 109.
+            У першому рядку вихідного файлу OUTPUT.TXT необхідно вивести m чисел
+            – останній рядок таблиці: an1, an2, …, anm.
+        </span>
+            </div>
+        <form method="POST">
+            <div class="path">
+                <div class="caption">
+                    <b>Шлях до файлу INPUT.txt:</b>
+                </div>
+                <div class="path_filling">
+                    <input type="text" placeholder="..." name="input_file">
+                </div>
+            </div>
+            <div class="path">
+                <div class="caption">
+                    <b>Шлях до файлу OUTPUT.txt:</b>
+                </div>
+                <div class="path_filling">
+                    <input type="text" placeholder="..." name="output_file">
+                </div>
+            </div>
+            <input type='submit' value='Run' />
+        </form>
+</div>

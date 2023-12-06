@@ -1,0 +1,95 @@
+﻿<head>
+    <style>
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .task {
+            margin-bottom: 15px;
+        }
+
+            .task b {
+                font-weight: bold;
+            }
+
+        .caption {
+            margin-bottom: 5px;
+        }
+
+        .path {
+            margin-bottom: 15px;
+        }
+
+        .path_filling input[type='text'] {
+            width: 100%;
+            padding: 8px;
+            font-size: 16px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        input[type='submit'] {
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 4px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+            input[type='submit']:hover {
+                background-color: #0056b3;
+            }
+    </style>
+</head>
+<div>
+    <div style="">
+        <div class="title">
+            Лабораторна робота 3
+        </div>
+        <div class="task">
+            <b>Завдання:</b>
+            <span>
+                У таблиці N рядків і N стовпців деякі клітини зайняті кульками, інші вільні.
+                Вибрано кульку, яку потрібно перемістити, і місце, куди її потрібно
+                перемістити. Вибрана кулька за один крок переміщається у сусідню по
+                горизонталі або вертикалі вільну клітину. Потрібно з'ясувати, чи можливо
+                перемістити кульку з початкової клітини в задану, і, якщо можливо, знайти
+                шлях з найменшої кількості кроків.
+                Вхідні дані
+                У першому рядку вхідного файлу INPUT.TXT знаходиться число N, у
+                наступних N рядках - N символів. Символом точки позначена вільна клітина,
+                англійської заголовної O - кулька, A - вихідне положення кульки, який
+                повинен рухатися, англійської заголовної X - кінцеве положення кульки. (2 ≤
+                N ≤ 250)
+                Вихідні дані
+                У вихідний файл OUTPUT.TXT виведіть у першому рядку «Y», якщо рух
+                можливий, або «N», якщо ні. Якщо рух можливий, то далі слід вивести N
+                рядків N символів - як і на введенні, але буква X, а також всі точки по дорозі
+                слід замінити плюсами. Якщо рішень кілька, виведіть будь-яке.
+            </span>
+        </div>  
+        <form method="POST">
+            <div class="path">
+                <div class="caption">
+                    <b>Шлях до файлу INPUT.txt:</b>
+                </div>
+                <div class="path_filling">
+                    <input type="text" placeholder="..." name="input_file">
+                </div>
+            </div>
+            <div class="path">
+                <div class="caption">
+                    <b>Шлях до файлу OUTPUT.txt:</b>
+                </div>
+                <div class="path_filling">
+                    <input type="text" placeholder="..." name="output_file">
+                </div>
+            </div>
+            <input type='submit' value='Run' />
+        </form>
+    </div>
+</div>
