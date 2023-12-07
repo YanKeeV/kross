@@ -1,0 +1,28 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+  config.vm.box = "bento/ubuntu-18.04"
+config.vm.provider "virtualbox" do |vb|
+    vb.gui = false
+    vb.memory = 2048
+  end
+  config.vm.network :forwarded_port, guest: 5050, host: 5050
+
+  config.vm.provision "shell", inline: <<-SHELL
+
+     wget https://packages.microsoft.com/config/debian/12/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+     sudo dpkg -i packages-microsoft-prod.deb
+     rm packages-microsoft-prod.deb
+
+     sudo apt-get update
+     sudo apt-get install -y apt-transport-https
+     sudo apt-get update
+     sudo apt-get install -y dotnet-sdk-6.0  
+     sudo apt-get install -y git
+     
+     git clone https://github.com/YanKeeV/kross.git
+     cd kross/lab5/sample/
+     dotnet run
+  SHELL
+end
